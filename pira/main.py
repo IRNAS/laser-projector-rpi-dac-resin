@@ -312,7 +312,7 @@ class MyApp(App):
     def import_points(self):
         try:
             # Read contour file
-            with open('contour.csv') as File:
+            with open('/data/contour.csv') as File:
                 reader = csv.reader(File)
                 rows = list(reader)
                 print 'Rows:'
@@ -587,7 +587,7 @@ class MyApp(App):
 
         try:
             # Read path file
-            with open('path.csv') as File:
+            with open('/data/path.csv') as File:
                 reader = csv.reader(File)
                 rows = list(reader)
                 PX = [int(e) for e in rows[0]]
@@ -597,7 +597,7 @@ class MyApp(App):
 
         try:
             # Read contour file
-            with open('parm.csv') as File:
+            with open('/data/parm.csv') as File:
                 reader = csv.reader(File)
                 rows = list(reader)
                 print 'Rows:'
@@ -623,7 +623,7 @@ class MyApp(App):
 
 
     def save_parameters(self):
-        with open('parm.csv', 'w') as csvfile:
+        with open('/data/parm.csv', 'w') as csvfile:
             writer = csv.writer(csvfile)
             writer.writerow([SPEED, MOVE_T, PAUSE_T])
 
@@ -642,7 +642,7 @@ def import_path():
     py = []
     try:
         # Read path file
-        with open('path.csv') as File:
+        with open('/data/path.csv') as File:
             reader = csv.reader(File)
             rows = list(reader)
             px = [int(e) for e in rows[0]]
@@ -652,7 +652,7 @@ def import_path():
 
     try:
         # Read contour file
-        with open('parm.csv') as File:
+        with open('/data/parm.csv') as File:
             reader = csv.reader(File)
             rows = list(reader)
             print 'Rows:'
