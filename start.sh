@@ -16,4 +16,4 @@ tvservice -o
 systemctl start pigpiod
 
 # Start the main application.
-python /pira/main.py
+python pira/main.py
