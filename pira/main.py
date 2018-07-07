@@ -754,13 +754,9 @@ if __name__ == "__main__":
 
     start(MyApp,
           debug=True,
-          address='192.168.13.109',
-          port=8081,
+          address='127.0.0.1',
+          port=80,
           multiple_instance=False,
           enable_file_cache=True,
           update_interval=0.1,
           start_browser=True)
-
-
-
-
