@@ -756,7 +756,7 @@ if __name__ == "__main__":
           debug=True,
           address='0.0.0.0',
           port=80,
-          websocket_port=80
+          websocket_port=80,
           multiple_instance=False,
           enable_file_cache=True,
           update_interval=0.1,
